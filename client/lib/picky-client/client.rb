@@ -130,4 +130,5 @@ end
 
 # Extend object with to_query method.
 #
-require 'active_support/core_ext/object/to_query'
+dir = File.dirname __FILE__
+require File.expand_path('extensions/to_query', dir)
